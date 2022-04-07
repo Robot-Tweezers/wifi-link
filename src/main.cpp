@@ -37,6 +37,8 @@ static void PollWifiConnection(void)
         {
             controller_serial.write(client.read());
         }
+
+        client.flush();
     }
     else
     {
